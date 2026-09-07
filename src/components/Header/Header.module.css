@@ -1,0 +1,89 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  backdrop-filter: blur(18px);
+  background: rgba(8, 12, 22, 0.72);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brandWrap {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.brandBadge {
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.9rem;
+  object-fit: cover;
+  box-shadow: 0 0 22px rgba(59, 130, 246, 0.5);
+  background: linear-gradient(135deg, #38bdf8, #8b5cf6);
+}
+
+.kicker {
+  margin: 0;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #7dd3fc;
+}
+
+.brandName {
+  margin: 0.15rem 0 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  color: #dfe7ff;
+}
+
+.nav a,
+.meta a {
+  color: #dfe7ff;
+  text-decoration: none;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.nav a:hover,
+.meta a:hover {
+  color: #7dd3fc;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.82rem;
+  color: #cbd5e1;
+}
+
+@media (max-width: 780px) {
+  .inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav,
+  .meta {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
