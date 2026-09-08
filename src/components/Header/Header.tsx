@@ -17,7 +17,7 @@ export function Header({ contact }: HeaderProps) {
             className={styles.brandBadge}
           />
           <div>
-            <p className={styles.kicker}>Desenvolvedor Full Stack</p>
+            <p className={styles.kicker}>Desenvolvedor de Sistemas Web e Aplicativos</p>
             <h1 className={styles.brandName}>{contact.name}</h1>
           </div>
         </div>
