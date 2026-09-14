@@ -32,6 +32,13 @@
   display: block;
 }
 
+.imagePlaceholder {
+  color: #64748b;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .body {
   padding: 1.2rem 1.1rem 1.4rem;
 }
@@ -72,4 +79,10 @@
 
 .link:hover::after {
   transform: translateX(4px);
+}
+
+.pending {
+  color: #64748b;
+  font-size: 0.9rem;
+  font-weight: 600;
 }

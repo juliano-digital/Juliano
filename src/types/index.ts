@@ -16,10 +16,3 @@ export interface Project {
   category: string
 }
 
-export interface CarouselItem {
-  id: string
-  title: string
-  subtitle: string
-  image: string
-  accent: string
-}

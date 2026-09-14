@@ -5,7 +5,7 @@
 const sobreData = {
   titulo: 'Sobre',
   informacoes: [
-    'Desenvolvedor web com experiência em React, TypeScript e Node.js',
+    'Desenvolvedor web com  em React, TypeScript e Node.js',
     'Especialista em criar interfaces modernas, performáticas e responsivas',
     'Foco em entregar soluções que conectam tecnologia e resultados de negócio',
     'Compromisso com código limpo, boas práticas e atenção aos detalhes',
@@ -18,6 +18,10 @@ import { motion } from 'framer-motion'
 import { Footer } from './components/Footer/Footer'
 import { Header } from './components/Header/Header'
 import { ProjectsGrid } from './components/ProjectsGrid/ProjectsGrid'
+import { Barbearia } from './componentes/barbearia/Barbearia'
+import { Delivery } from './componentes/delivery/Delivery'
+import { Gestao } from './componentes/gestao/Gestao'
+import { Oficina } from './componentes/oficina/Oficina'
 import { contactInfo, projects } from './data/projects'
 import { useScrollReveal } from './hooks/useScrollReveal'
 import './App.css'
@@ -25,6 +29,24 @@ import './App.css'
 function App() {
   const heroRef = useScrollReveal<HTMLElement>()
   const sobreRef = useScrollReveal<HTMLElement>()
+
+  const categoryPages = {
+    '/barbearia': <Barbearia />,
+    '/delivery': <Delivery />,
+    '/gestao': <Gestao />,
+    '/oficina': <Oficina />,
+  }
+  const categoryPage = categoryPages[window.location.pathname as keyof typeof categoryPages]
+
+  if (categoryPage) {
+    return (
+      <div className="app-shell">
+        <Header contact={contactInfo} />
+        {categoryPage}
+        <Footer contact={contactInfo} />
+      </div>
+    )
+  }
 
   return (
     <div className="app-shell">
