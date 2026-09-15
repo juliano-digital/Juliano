@@ -137,12 +137,46 @@ function App() {
         
         {/* Seção Sobre - Compacta */}
         <section className="about-compact reveal" id="sobre" ref={sobreRef}>
-          <p className="eyebrow">{sobreData.titulo}</p>
-          <ul className="about-list">
-            {sobreData.informacoes.map((info, index) => (
-              <li key={index}>{info}</li>
-            ))}
-          </ul>
+          <div className="about-layout">
+            <div className="about-content">
+              <p className="eyebrow">{sobreData.titulo}</p>
+              <ul className="about-list">
+                {sobreData.informacoes.map((info, index) => (
+                  <li key={index}>{info}</li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="about-visual" aria-label="Tela de computador com código sendo digitado">
+              <div className="computer-scene">
+                <div className="screen">
+                  <div className="screen-header">
+                    <span className="dot red" />
+                    <span className="dot yellow" />
+                    <span className="dot green" />
+                  </div>
+
+                  <div className="screen-body">
+                    <div className="code-window">
+                      <span className="line line-1 code-comment">// build product</span>
+                      <span className="line line-2">const stack = ['React', 'TS', 'Node']</span>
+                      <span className="line line-3">const result = 'Impacto real'</span>
+                      <span className="line line-4">return &lt;Experience /&gt;</span>
+                      <span className="cursor" aria-hidden="true" />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="keyboard-base">
+                  <div className="keyboard-row" />
+                </div>
+
+                <div className="floating-badge badge-react">React</div>
+                <div className="floating-badge badge-node">Node</div>
+                <div className="floating-badge badge-ts">TS</div>
+              </div>
+            </div>
+          </div>
         </section>
 
         <ProjectsGrid projects={projects} />

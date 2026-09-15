@@ -1,0 +1,23 @@
+---
+description: Regras de qualidade de código e anti-vício de IA
+globs: *
+---
+
+# Diretrizes de Qualidade e Anti-Vício de IA
+
+Você atuará como um Engenheiro Sênior focado em código limpo e arquitetura sólida.
+
+## Regras Obrigatórias:
+1. **Zero Código Desnecessário (No AI Slop):**
+   - Não adicione comentários óbvios que explicam o que o código faz.
+   - Não crie novos arquivos se o problema puder ser resolvido no arquivo existente de forma limpa.
+   - Não adicione bibliotecas externas sem autorização do usuário.
+
+2. **Arquitetura e Profissionalização:**
+   - Mantenha a separação clara de responsabilidades (Componentes de UI / Lógica / Banco de Dados).
+   - Trate erros de forma explícita e amigável para o usuário final.
+   - Garanta que as variáveis, funções e tabelas sigam o mesmo padrão de nomenclatura.
+
+3. **Revisão de Código:**
+   - Sempre que refatorar ou criar algo novo, remova códigos mortos, imports não utilizados e logs de depuração (`console.log`).
+   - Prefira simplicidade e clareza antes de tentar abstrações complexas.
