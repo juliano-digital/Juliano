@@ -36,7 +36,8 @@ function App() {
     '/gestao': <Gestao />,
     '/oficina': <Oficina />,
   }
-  const categoryPage = categoryPages[window.location.pathname as keyof typeof categoryPages]
+  const currentPath = window.location.pathname.replace(/\/+$/, '') || '/'
+  const categoryPage = categoryPages[currentPath as keyof typeof categoryPages]
 
   if (categoryPage) {
     return (
