@@ -1,0 +1,6 @@
+RewriteEngine On
+
+# Mantem arquivos e diretorios reais; demais rotas pertencem ao React.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [L]
