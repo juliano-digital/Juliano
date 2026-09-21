@@ -21,6 +21,7 @@
   margin: 0;
   font-size: clamp(2rem, 5vw, 3.5rem);
   color: var(--title-color);
+  text-shadow: 2px 3px 0 rgba(0, 26, 93, 0.14), 0 10px 18px rgba(0, 26, 93, 0.16);
 }
 
 .description {

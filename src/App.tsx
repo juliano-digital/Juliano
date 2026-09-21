@@ -17,20 +17,17 @@ const sobreData = {
 import { motion } from 'framer-motion'
 import { Footer } from './components/Footer/Footer'
 import { Header } from './components/Header/Header'
+import { PixelReveal } from './components/PixelReveal/PixelReveal'
 import { ProjectsGrid } from './components/ProjectsGrid/ProjectsGrid'
 import { Barbearia } from './componentes/barbearia/Barbearia'
 import { Delivery } from './componentes/delivery/Delivery'
 import { Gestao } from './componentes/gestao/Gestao'
 import { Oficina } from './componentes/oficina/Oficina'
 import { contactInfo, projects } from './data/projects'
-import { useScrollReveal } from './hooks/useScrollReveal'
 import { GlyphMatrix } from '@/registry/magicui/glyph-matrix'
 import './App.css'
 
 function App() {
-  const heroRef = useScrollReveal<HTMLElement>()
-  const sobreRef = useScrollReveal<HTMLElement>()
-
   const categoryPages = {
     '/barbearia': <Barbearia />,
     '/delivery': <Delivery />,
@@ -53,9 +50,10 @@ function App() {
   return (
     <div className="app-shell">
       <Header contact={contactInfo} />
+      <PixelReveal />
 
       <main>
-        <section className="hero-section reveal" ref={heroRef}>
+        <section className="hero-section">
           <div className="hero-copy">
             <p className="eyebrow">Desenvolvimento digital</p>
             <h1>
@@ -138,7 +136,7 @@ function App() {
         </section>
         
         {/* Seção Sobre - Compacta */}
-        <section className="about-compact reveal" id="sobre" ref={sobreRef}>
+        <section className="about-compact" id="sobre">
           <div className="about-layout">
             <div className="about-content">
               <p className="eyebrow">{sobreData.titulo}</p>
