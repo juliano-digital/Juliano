@@ -27,8 +27,19 @@ body {
   min-height: 100vh;
   background:
     radial-gradient(circle at top, rgba(59, 130, 246, 0.12), transparent 30%),
-    linear-gradient(180deg, #040816 0%, #020817 100%);
+    linear-gradient(180deg, #d4e9ff 0%, #d4e9ff 100%);
   color: var(--text-primary);
+}
+
+p,
+li,
+span,
+a,
+button,
+input,
+textarea,
+select {
+  color: #000000;
 }
 
 body,
@@ -58,6 +69,7 @@ h3,
 h4 {
   font-family: 'Orbitron', sans-serif;
   letter-spacing: -0.04em;
+  color: var(--title-color);
 }
 
 .reveal {

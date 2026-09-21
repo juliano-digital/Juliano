@@ -11,7 +11,7 @@
 
 .label {
   margin: 0 0 0.75rem;
-  color: #7dd3fc;
+  color: var(--subtitle-color);
   font-size: 0.75rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -20,11 +20,12 @@
 .header h1 {
   margin: 0;
   font-size: clamp(2rem, 5vw, 3.5rem);
+  color: var(--title-color);
 }
 
 .description {
   margin: 1rem 0 0;
-  color: #cbd5e1;
+  color: #000000;
   font-size: 1.05rem;
   line-height: 1.7;
 }

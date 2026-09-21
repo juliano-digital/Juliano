@@ -24,6 +24,7 @@ import { Gestao } from './componentes/gestao/Gestao'
 import { Oficina } from './componentes/oficina/Oficina'
 import { contactInfo, projects } from './data/projects'
 import { useScrollReveal } from './hooks/useScrollReveal'
+import { GlyphMatrix } from '@/registry/magicui/glyph-matrix'
 import './App.css'
 
 function App() {
@@ -57,7 +58,17 @@ function App() {
         <section className="hero-section reveal" ref={heroRef}>
           <div className="hero-copy">
             <p className="eyebrow">Desenvolvimento digital</p>
-            <h1>Transformo ideias em produtos digitais que geram valor real.</h1>
+            <h1>
+              <span className="word color-1">Transformo</span>{' '}
+              <span className="word color-2">ideias</span>{' '}
+              <span className="word color-3">em</span>{' '}
+              <span className="word color-1">produtos</span>{' '}
+              <span className="word color-2">digitais</span>{' '}
+              <span className="word color-3">que</span>{' '}
+              <span className="word color-1">geram</span>{' '}
+              <span className="word color-2">valor</span>{' '}
+              <span className="word color-3">real.</span>
+            </h1>
             <p className="subtitle">
               Crio interfaces, sistemas e experiências web com foco em performance,
               estratégia de negócio e visual premium.
@@ -120,18 +131,8 @@ function App() {
           </div>
 
           <motion.div className="hero-visual" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: 'easeOut' }}>
-            <div className="scanlines" />
-            <div className="terminal-panel">
-              <div className="terminal-header">
-                <span className="dot red" />
-                <span className="dot yellow" />
-                <span className="dot green" />
-              </div>
-              <div className="terminal-body">
-                <p>&lt;code /&gt;</p>
-                <p>const experience = 'UI + Performance'</p>
-                <p>const delivery = 'Escalável e moderno'</p>
-              </div>
+            <div className="glyph-matrix-shell">
+              <GlyphMatrix />
             </div>
           </motion.div>
         </section>
