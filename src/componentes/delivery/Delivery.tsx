@@ -4,8 +4,8 @@ import { deliveryProjects } from './deliveryProjects'
 export function Delivery() {
   return (
     <CategoryProjectsPage
-      title="Projetos de Delivery"
-      description="Soluções digitais para restaurantes, lojas e serviços de entrega."
+      title="Projetos de E-commerce"
+      description="Soluções digitais para lojas virtuais, vendas online e experiências de compra."
       projects={deliveryProjects}
     />
   )

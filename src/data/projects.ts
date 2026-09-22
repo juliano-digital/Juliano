@@ -12,12 +12,12 @@ export const contactInfo: ContactInfo = {
 export const projects: Project[] = [
   {
     id: 'project-1',
-    title: 'Plataforma de Delivery',
+    title: 'Plataformas de E-Commerces',
     description:
-      'Arquitetura moderna de storefront com foco em conversão, performance e experiência de compra premium.',
-    image: '/assets/images/projects/logopadaria.png',
+      'Soluções de e-commerce com lojas modernas, foco em conversão, performance e experiência de compra.',
+    image: '/public/fotoprojetos/ecommerce.png',
     link: '/delivery',
-    category: 'Delivery',
+    category: 'E-commerce',
   },
   {
     id: 'project-2',

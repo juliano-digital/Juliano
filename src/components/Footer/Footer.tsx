@@ -6,6 +6,9 @@ interface FooterProps {
 }
 
 export function Footer({ contact }: FooterProps) {
+  const phoneDigits = contact.phone.replace(/\D/g, '')
+  const whatsappPhone = phoneDigits.startsWith('55') ? phoneDigits : `55${phoneDigits}`
+
   return (
     <footer className={styles.footer} id="contact">
       <div className={styles.content}>
@@ -15,9 +18,17 @@ export function Footer({ contact }: FooterProps) {
         </div>
 
         <div className={styles.contactList}>
-          <a href={`tel:${contact.phone}`}>{contact.phone}</a>
+          <a href={`https://wa.me/${whatsappPhone}`} target="_blank" rel="noopener noreferrer">
+            {contact.phone}
+          </a>
           <a href={`mailto:${contact.email}`}>{contact.email}</a>
-          <span>{contact.location}</span>
+          <a
+            href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(contact.location)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {contact.location}
+          </a>
           <a href={contact.github} target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href={contact.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>

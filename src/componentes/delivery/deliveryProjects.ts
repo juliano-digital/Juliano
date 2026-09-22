@@ -3,15 +3,15 @@ import type { Project } from '../../types'
 export const deliveryProjects: Project[] = [
   {
     id: 'delivery-1',
-    title: 'Plataforma de Delivery',
-    description: 'Arquitetura moderna de storefront com foco em conversão, performance e experiência de compra premium.',
+    title: 'Loja virtual para padarias',
+    description: 'Loja virtual para padarias e confeitarias, com catálogo de produtos, pedidos online e uma experiência de compra simples e prática.',
     image: '/assets/images/projects/logopadaria.png',
     link: 'https://appmodelo.com',
-    category: 'Delivery',
+    category: 'Padaria e Confeitaria',
   },
   {
     id: 'delivery-2',
-    title: 'Novo projeto de delivery',
+    title: 'Novo projeto de e-commerce',
     description: 'Espaço reservado para o próximo projeto.',
     image: '',
     link: '',
@@ -19,7 +19,7 @@ export const deliveryProjects: Project[] = [
   },
   {
     id: 'delivery-3',
-    title: 'Novo projeto de delivery',
+    title: 'Novo projeto de e-commerce',
     description: 'Espaço reservado para o próximo projeto.',
     image: '',
     link: '',
@@ -27,7 +27,7 @@ export const deliveryProjects: Project[] = [
   },
   {
     id: 'delivery-4',
-    title: 'Novo projeto de delivery',
+    title: 'Novo projeto de e-commerce',
     description: 'Espaço reservado para o próximo projeto.',
     image: '',
     link: '',
@@ -35,7 +35,7 @@ export const deliveryProjects: Project[] = [
   },
   {
     id: 'delivery-5',
-    title: 'Novo projeto de delivery',
+    title: 'Novo projeto de e-commerce',
     description: 'Espaço reservado para o próximo projeto.',
     image: '',
     link: '',
@@ -43,7 +43,7 @@ export const deliveryProjects: Project[] = [
   },
   {
     id: 'delivery-6',
-    title: 'Novo projeto de delivery',
+    title: 'Novo projeto de e-commerce',
     description: 'Espaço reservado para o próximo projeto.',
     image: '',
     link: '',

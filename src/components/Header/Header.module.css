@@ -23,6 +23,16 @@
   gap: 0.9rem;
 }
 
+.brandLink {
+  display: inline-flex;
+  border-radius: 0.9rem;
+}
+
+.brandLink:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.45);
+  outline-offset: 3px;
+}
+
 .brandBadge {
   display: block;
   width: 2.5rem;

@@ -14,10 +14,10 @@ const sobreData = {
 }
 // ============================================
 
+import { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Footer } from './components/Footer/Footer'
 import { Header } from './components/Header/Header'
-import { PixelReveal } from './components/PixelReveal/PixelReveal'
 import { ProjectsGrid } from './components/ProjectsGrid/ProjectsGrid'
 import { Barbearia } from './componentes/barbearia/Barbearia'
 import { Delivery } from './componentes/delivery/Delivery'
@@ -28,6 +28,17 @@ import { GlyphMatrix } from '@/registry/magicui/glyph-matrix'
 import './App.css'
 
 function App() {
+  useEffect(() => {
+    if (window.location.pathname !== '/' || !window.location.hash) return
+
+    const frame = window.requestAnimationFrame(() => {
+      const target = document.getElementById(window.location.hash.slice(1))
+      target?.scrollIntoView({ behavior: 'auto', block: 'start' })
+    })
+
+    return () => window.cancelAnimationFrame(frame)
+  }, [])
+
   const categoryPages = {
     '/barbearia': <Barbearia />,
     '/delivery': <Delivery />,
@@ -50,7 +61,6 @@ function App() {
   return (
     <div className="app-shell">
       <Header contact={contactInfo} />
-      <PixelReveal />
 
       <main>
         <section className="hero-section">
