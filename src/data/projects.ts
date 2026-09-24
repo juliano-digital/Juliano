@@ -15,7 +15,7 @@ export const projects: Project[] = [
     title: 'Plataformas de E-Commerces',
     description:
       'Soluções de e-commerce com lojas modernas, foco em conversão, performance e experiência de compra.',
-    image: '/public/fotoprojetos/ecommerce.png',
+    image: '/fotoprojetos/ecommerce.png',
     link: '/delivery',
     category: 'E-commerce',
   },
