@@ -21,19 +21,19 @@ export const projects: Project[] = [
   },
   {
     id: 'project-2',
-    title: 'Gestão Financeira',
+    title: 'Controle Financeiro',
     description:
-      'Painel analítico para gestão de KPIs, indicadores em tempo real e automações de rotina empresarial.',
-    image: '/assets/images/projects/logogestao.png',
+      'Encontre o aplicativo ideal para sua empresa. Ferramentas com indicadores em tempo real, dashboards e automações financeiras.',
+    image: '/fotoprojetos/carteira.png',
     link: '/gestao',
     category: 'Financeiro',
   },
   {
     id: 'project-3',
-    title: 'App de Agendamento',
+    title: 'Sistemas para barbearias',
     description:
       'Fluxo de agendamento para barbearia e profissionais, com reservas inteligentes e gestão de clientes.',
-    image: '/assets/images/projects/logobarbershop.png',
+    image: '/fotoprojetos/barbershop.png',
     link: '/barbearia',
     category: 'Barbearia',
   },

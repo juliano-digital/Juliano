@@ -3,10 +3,10 @@ import type { Project } from '../../types'
 export const barbeariaProjects: Project[] = [
   {
     id: 'barbearia-1',
-    title: 'Sistema para Barbearia',
+    title: 'Sistemas para barbearias',
     description:
       'Plataforma de agendamento e gestão de clientes para barbearias e profissionais.',
-    image: '/assets/images/projects/logobarbershop.png',
+    image: '/fotoprojetos/barbershop.png',
     link: 'https://agendar.appmodelo.com/',
     category: 'Barbearia',
   },

@@ -3,9 +3,9 @@ import type { Project } from '../../types'
 export const gestaoProjects: Project[] = [
   {
     id: 'gestao-1',
-    title: 'Gestão Financeira',
-    description: 'Painel analítico para gestão de KPIs, indicadores em tempo real e automações de rotina empresarial.',
-    image: '/assets/images/projects/logogestao.png',
+    title: 'Controle Financeiro',
+    description: 'Encontre o aplicativo ideal para sua empresa. Ferramentas com indicadores em tempo real, dashboards e automações financeiras.',
+    image: '/fotoprojetos/carteira.png',
     link: 'https://financas.appmodelo.com/',
     category: 'Gestão',
   },
