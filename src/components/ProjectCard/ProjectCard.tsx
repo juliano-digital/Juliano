@@ -3,13 +3,15 @@ import styles from './ProjectCard.module.css'
 
 interface ProjectCardProps {
   project: Project
+  variant?: 'home' | 'project-page'
 }
 
-export function ProjectCard({ project }: ProjectCardProps) {
+export function ProjectCard({ project, variant = 'home' }: ProjectCardProps) {
   const isInternalLink = project.link.startsWith('/')
+  const cardClass = variant === 'project-page' ? `${styles.card} ${styles.projectPageCard}` : styles.card
 
   return (
-    <article className={styles.card}>
+    <article className={cardClass}>
       <div className={styles.imageWrap}>
         {project.image ? (
           <img src={project.image} alt={project.title} />

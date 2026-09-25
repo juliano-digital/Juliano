@@ -1,4 +1,13 @@
 .page {
+  min-height: 100vh;
+  background: #4d4d4d;
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.pageContent {
   width: min(1200px, 100%);
   margin: 0 auto;
   padding: 4rem 1.25rem 5rem;
@@ -11,7 +20,7 @@
 
 .label {
   margin: 0 0 0.75rem;
-  color: var(--subtitle-color);
+  color: #ffffff;
   font-size: 0.75rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -20,13 +29,13 @@
 .header h1 {
   margin: 0;
   font-size: clamp(2rem, 5vw, 3.5rem);
-  color: var(--title-color);
-  text-shadow: 2px 3px 0 rgba(0, 26, 93, 0.14), 0 10px 18px rgba(0, 26, 93, 0.16);
+  color: #ffffff;
+  text-shadow: 2px 3px 0 rgba(0, 0, 0, 0.3), 0 10px 18px rgba(0, 0, 0, 0.2);
 }
 
 .description {
   margin: 1rem 0 0;
-  color: #000000;
+  color: #ffffff;
   font-size: 1.05rem;
   line-height: 1.7;
 }
@@ -39,6 +48,6 @@
 
 @media (max-width: 860px) {
   .grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }

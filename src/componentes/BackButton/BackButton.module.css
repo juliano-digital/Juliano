@@ -4,10 +4,10 @@
   gap: 0.55rem;
   margin-bottom: 2.5rem;
   padding: 0.7rem 1rem;
-  border: 1px solid rgba(125, 211, 252, 0.45);
+  border: 1px solid #000000;
   border-radius: 0.65rem;
-  background: rgba(15, 23, 42, 0.72);
-  color: #e2e8f0;
+  background: #ffffff;
+  color: #000000;
   cursor: pointer;
   font: inherit;
   font-weight: 600;
@@ -16,11 +16,11 @@
 
 .button:hover {
   transform: translateX(-3px);
-  border-color: #7dd3fc;
-  background: rgba(14, 165, 233, 0.18);
+  background: #f0f0f0;
+  border-color: #333333;
 }
 
 .button:focus-visible {
-  outline: 2px solid #7dd3fc;
+  outline: 2px solid #000000;
   outline-offset: 3px;
 }

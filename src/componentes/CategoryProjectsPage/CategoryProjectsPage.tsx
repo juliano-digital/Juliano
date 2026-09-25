@@ -12,19 +12,21 @@ interface CategoryProjectsPageProps {
 export function CategoryProjectsPage({ title, description, projects }: CategoryProjectsPageProps) {
   return (
     <main className={styles.page}>
-      <BackButton />
+      <div className={styles.pageContent}>
+        <BackButton />
 
-      <header className={styles.header}>
-        <p className={styles.label}>Portfólio especializado</p>
-        <h1>{title}</h1>
-        <p className={styles.description}>{description}</p>
-      </header>
+        <header className={styles.header}>
+          <p className={styles.label}>Portfólio especializado</p>
+          <h1>{title}</h1>
+          <p className={styles.description}>{description}</p>
+        </header>
 
-      <section className={styles.grid} aria-label={title}>
-        {projects.map((project) => (
-          <ProjectCard key={project.id} project={project} />
-        ))}
-      </section>
+        <section className={styles.grid} aria-label={title}>
+          {projects.map((project) => (
+            <ProjectCard key={project.id} project={project} variant="project-page" />
+          ))}
+        </section>
+      </div>
     </main>
   )
 }
