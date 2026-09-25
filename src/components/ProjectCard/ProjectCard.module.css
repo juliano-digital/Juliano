@@ -19,11 +19,28 @@
 .projectPageCard {
   background: #F5E070;
   border: 1px solid rgba(0, 0, 0, 0.08);
+  overflow: visible;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
   box-shadow:
     0 10px 20px rgba(0, 0, 0, 0.06),
     0 18px 40px rgba(0, 0, 0, 0.1),
     0 28px 60px rgba(0, 0, 0, 0.05),
-    8px 8px 18px rgba(0, 0, 0, 0.06);
+    8px 8px 18px rgba(0, 0, 0, 0.06),
+    0 0 50px 12px rgba(245, 224, 112, 0.5);
+}
+
+.projectPageCard::after {
+  content: '';
+  position: absolute;
+  bottom: -18px;
+  left: 6%;
+  right: 6%;
+  height: 28px;
+  background: radial-gradient(ellipse at center, rgba(245, 224, 112, 0.6) 0%, rgba(245, 224, 112, 0.3) 40%, transparent 70%);
+  filter: blur(10px);
+  z-index: -1;
+  pointer-events: none;
+  transition: bottom 0.22s ease, height 0.22s ease, background 0.22s ease;
 }
 
 .projectPageCard:hover {
@@ -33,7 +50,14 @@
     0 18px 36px rgba(0, 0, 0, 0.08),
     0 28px 64px rgba(0, 0, 0, 0.12),
     0 42px 80px rgba(0, 0, 0, 0.07),
-    12px 12px 24px rgba(0, 0, 0, 0.08);
+    12px 12px 24px rgba(0, 0, 0, 0.08),
+    0 0 55px 14px rgba(245, 224, 112, 0.6);
+}
+
+.projectPageCard:hover::after {
+  bottom: -28px;
+  height: 36px;
+  background: radial-gradient(ellipse at center, rgba(245, 224, 112, 0.7) 0%, rgba(245, 224, 112, 0.35) 40%, transparent 70%);
 }
 
 .card:hover {
@@ -120,4 +144,55 @@
   color: #64748b;
   font-size: 0.9rem;
   font-weight: 600;
+}
+
+@media (max-width: 860px) {
+  .projectPageCard {
+    transform: perspective(1200px) rotateX(2deg) rotateY(-2deg);
+    transform-style: preserve-3d;
+  }
+
+  .projectPageCard::after {
+    bottom: -14px;
+    height: 22px;
+    background: radial-gradient(ellipse at center, rgba(245, 224, 112, 0.55) 0%, rgba(245, 224, 112, 0.25) 40%, transparent 70%);
+    transition: bottom 0.22s ease, height 0.22s ease, background 0.22s ease;
+  }
+
+  .projectPageCard:hover::after {
+    bottom: -22px;
+    height: 30px;
+    background: radial-gradient(ellipse at center, rgba(245, 224, 112, 0.65) 0%, rgba(245, 224, 112, 0.3) 40%, transparent 70%);
+  }
+
+  .projectPageCard .imageWrap {
+    aspect-ratio: 16 / 9;
+  }
+
+  .projectPageCard .body {
+    padding: 0.8rem 0.7rem 1rem;
+  }
+
+  .projectPageCard .category {
+    font-size: 0.6rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .projectPageCard .body h3 {
+    font-size: 1rem;
+  }
+
+  .projectPageCard .body p {
+    font-size: 0.8rem;
+    margin: 0.4rem 0 0.6rem;
+    line-height: 1.5;
+  }
+
+  .projectPageCard .link {
+    font-size: 0.75rem;
+  }
+
+  .projectPageCard .pending {
+    font-size: 0.75rem;
+  }
 }
