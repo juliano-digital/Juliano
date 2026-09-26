@@ -6,7 +6,7 @@ export const oficinaProjects: Project[] = [
     title: 'Novo projeto de oficina',
     description: 'Espaço reservado para o próximo projeto.',
     image: '',
-    link: '',
+    link: 'oficina.appmodelo.com',
     category: 'Em breve',
   },
   {

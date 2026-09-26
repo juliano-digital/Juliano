@@ -37,5 +37,13 @@ export const projects: Project[] = [
     link: '/barbearia',
     category: 'Barbearia',
   },
+{
+    id: 'project-4',
+    title: 'Sistemas para Oficinas',
+    description: 'Desenvolvemos sistemas personalizados para oficinas mecânicas, auto centers, centros automotivos e empresas do setor.',
+    image: '/fotoprojetos/oficina.png',
+    link: '/oficina',
+    category: 'Oficina',
+  }
 ]
 
