@@ -44,6 +44,14 @@ export const projects: Project[] = [
     image: '/fotoprojetos/oficina.png',
     link: '/oficina',
     category: 'Oficina',
+  },
+  {
+    id: 'project-5',
+    title: 'Mobiliarias',
+    description: 'Desenvolvemos sistemas personalizados para oficinas mecânicas, auto centers, centros automotivos e empresas do setor.',
+    image: '/fotoprojetos/oficina.png',
+    link: '/mobiliarias',
+    category: 'Mobiliarias',
   }
 ]
 

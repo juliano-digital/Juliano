@@ -23,6 +23,7 @@ import { Barbearia } from './componentes/barbearia/Barbearia'
 import { Delivery } from './componentes/delivery/Delivery'
 import { Gestao } from './componentes/gestao/Gestao'
 import { Oficina } from './componentes/oficina/Oficina'
+import { Mobiliarias } from './componentes/Imobiliarias/mobiliaria'
 import { contactInfo, projects } from './data/projects'
 import { GlyphMatrix } from '@/registry/magicui/glyph-matrix'
 import './App.css'
@@ -44,6 +45,7 @@ function App() {
     '/delivery': <Delivery />,
     '/gestao': <Gestao />,
     '/oficina': <Oficina />,
+    '/mobiliarias': <Mobiliarias />,
   }
   const currentPath = window.location.pathname.replace(/\/+$/, '') || '/'
   const categoryPage = categoryPages[currentPath as keyof typeof categoryPages]
