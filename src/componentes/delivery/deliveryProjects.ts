@@ -4,7 +4,7 @@ export const deliveryProjects: Project[] = [
   {
     id: 'delivery-1',
     title: 'Loja virtual para padarias',
-    description: 'Loja virtual para padarias e confeitarias, com catálogo de produtos, pedidos online e uma experiência de compra simples e prática.',
+    description: 'Loja virtual para padarias e confeitarias.',
     image: '/assets/images/projects/logopadaria.png',
     link: 'https://appmodelo.com',
     category: 'Padaria e Confeitaria',
