@@ -4,8 +4,8 @@ import { mobiliariasProjects } from './mobiliariasProjects'
 export function Mobiliarias() {
   return (
     <CategoryProjectsPage
-      title="Projetos de Gestão"
-      description="Painéis, sistemas e experiências digitais para organizar operações e resultados."
+      title="Projetos de Imobiliarias"
+      description=" Sistemas,experiências e resultados para nicho imbiliario."
       projects={mobiliariasProjects}
     />
   )

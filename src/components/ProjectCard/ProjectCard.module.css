@@ -22,11 +22,11 @@
   overflow: visible;
   transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
   box-shadow:
-    0 10px 20px rgba(0, 0, 0, 0.06),
-    0 18px 40px rgba(0, 0, 0, 0.1),
-    0 28px 60px rgba(0, 0, 0, 0.05),
-    8px 8px 18px rgba(0, 0, 0, 0.06),
-    0 0 50px 12px rgba(245, 224, 112, 0.5);
+    0 8px 14px rgba(0, 0, 0, 0.10),
+    0 14px 28px rgba(0, 0, 0, 0.14),
+    0 22px 42px rgba(0, 0, 0, 0.08),
+    6px 6px 12px rgba(0, 0, 0, 0.10),
+    0 0 20px 5px rgba(245, 224, 112, 0.15);
 }
 
 .projectPageCard::after {
@@ -36,7 +36,7 @@
   left: 6%;
   right: 6%;
   height: 28px;
-  background: radial-gradient(ellipse at center, rgba(245, 224, 112, 0.6) 0%, rgba(245, 224, 112, 0.3) 40%, transparent 70%);
+  background: radial-gradient(ellipse at center, rgba(245, 224, 112, 0.25) 0%, rgba(245, 224, 112, 0.12) 40%, transparent 70%);
   filter: blur(10px);
   z-index: -1;
   pointer-events: none;
@@ -51,13 +51,13 @@
     0 28px 64px rgba(0, 0, 0, 0.12),
     0 42px 80px rgba(0, 0, 0, 0.07),
     12px 12px 24px rgba(0, 0, 0, 0.08),
-    0 0 55px 14px rgba(245, 224, 112, 0.6);
+    0 0 35px 8px rgba(245, 224, 112, 0.25);
 }
 
 .projectPageCard:hover::after {
   bottom: -28px;
   height: 36px;
-  background: radial-gradient(ellipse at center, rgba(245, 224, 112, 0.7) 0%, rgba(245, 224, 112, 0.35) 40%, transparent 70%);
+  background: radial-gradient(ellipse at center, rgba(245, 224, 112, 0.35) 0%, rgba(245, 224, 112, 0.18) 40%, transparent 70%);
 }
 
 .card:hover {
@@ -155,14 +155,14 @@
   .projectPageCard::after {
     bottom: -14px;
     height: 22px;
-    background: radial-gradient(ellipse at center, rgba(245, 224, 112, 0.55) 0%, rgba(245, 224, 112, 0.25) 40%, transparent 70%);
+    background: radial-gradient(ellipse at center, rgba(245, 224, 112, 0.35) 0%, rgba(245, 224, 112, 0.18) 40%, transparent 70%);
     transition: bottom 0.22s ease, height 0.22s ease, background 0.22s ease;
   }
 
   .projectPageCard:hover::after {
     bottom: -22px;
     height: 30px;
-    background: radial-gradient(ellipse at center, rgba(245, 224, 112, 0.65) 0%, rgba(245, 224, 112, 0.3) 40%, transparent 70%);
+    background: radial-gradient(ellipse at center, rgba(245, 224, 112, 0.45) 0%, rgba(245, 224, 112, 0.22) 40%, transparent 70%);
   }
 
   .projectPageCard .imageWrap {

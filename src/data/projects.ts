@@ -42,16 +42,16 @@ export const projects: Project[] = [
     title: 'Sistemas para Oficinas',
     description: 'Desenvolvemos sistemas personalizados para oficinas mecânicas, auto centers, centros automotivos e empresas do setor.',
     image: '/fotoprojetos/oficina.png',
-    link: '/oficina',
+    link: '/https://oficina.appmodelo.com/',
     category: 'Oficina',
   },
   {
     id: 'project-5',
-    title: 'Mobiliarias',
-    description: 'Desenvolvemos sistemas personalizados para oficinas mecânicas, auto centers, centros automotivos e empresas do setor.',
-    image: '/fotoprojetos/oficina.png',
+    title: 'Imobiliarias',
+    description: 'Desenvolvo sistemas que geram valor para imobiliarias.',
+    image: '/fotoprojetos/mobiliaria.png',
     link: '/mobiliarias',
-    category: 'Mobiliarias',
+    category: 'Imobiliarias',
   }
 ]
 
