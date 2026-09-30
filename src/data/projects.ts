@@ -42,7 +42,7 @@ export const projects: Project[] = [
     title: 'Sistemas para Oficinas',
     description: 'Desenvolvemos sistemas personalizados para oficinas mecânicas, auto centers, centros automotivos e empresas do setor.',
     image: '/fotoprojetos/oficina.png',
-    link: '/https://oficina.appmodelo.com/',
+    link: '/oficina',
     category: 'Oficina',
   },
   {

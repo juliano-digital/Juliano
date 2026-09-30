@@ -9,12 +9,17 @@ interface ProjectCardProps {
 export function ProjectCard({ project, variant = 'home' }: ProjectCardProps) {
   const isInternalLink = project.link.startsWith('/')
   const cardClass = variant === 'project-page' ? `${styles.card} ${styles.projectPageCard}` : styles.card
+  const isVideo = project.image?.endsWith('.mp4')
 
   return (
     <article className={cardClass}>
       <div className={styles.imageWrap}>
         {project.image ? (
-          <img src={project.image} alt={project.title} />
+          isVideo ? (
+            <video src={project.image} controls={false} muted playsInline autoPlay loop />
+          ) : (
+            <img src={project.image} alt={project.title} />
+          )
         ) : (
           <span className={styles.imagePlaceholder}>Imagem do projeto</span>
         )}
