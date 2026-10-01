@@ -39,7 +39,7 @@ export function ProjectCard({ project, variant = 'home' }: ProjectCardProps) {
             })}
             className={styles.link}
           >
-            Ver projetos
+            Ver projeto
           </a>
         ) : (
           <span className={styles.pending}>Aguardando projeto</span>
