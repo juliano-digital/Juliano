@@ -10,6 +10,7 @@ export function ProjectCard({ project, variant = 'home' }: ProjectCardProps) {
   const isInternalLink = project.link.startsWith('/')
   const cardClass = variant === 'project-page' ? `${styles.card} ${styles.projectPageCard}` : styles.card
   const isVideo = project.image?.endsWith('.mp4')
+  const linkText = variant === 'home' ? 'Ver projetos' : 'Ver projeto'
 
   return (
     <article className={cardClass}>
@@ -39,7 +40,7 @@ export function ProjectCard({ project, variant = 'home' }: ProjectCardProps) {
             })}
             className={styles.link}
           >
-            Ver projeto
+            {linkText}
           </a>
         ) : (
           <span className={styles.pending}>Aguardando projeto</span>
