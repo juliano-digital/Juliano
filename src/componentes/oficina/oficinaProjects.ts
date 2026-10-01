@@ -11,11 +11,11 @@ export const oficinaProjects: Project[] = [
   },
   {
     id: 'oficina-2',
-    title: 'Novo projeto de oficina',
-    description: 'Espaço reservado para o próximo projeto.',
-    image: 'fotoprojetos/desenvolvimento.mp4',
-    link: '',
-    category: 'Em breve',
+    title: 'AUTO-FORTE',
+    description: 'Agende serviços mecânicos online de forma rápida, simples e transparente.',
+    image: 'fotoprojetos/autoforte.png',
+    link: 'https://autoforte.appmodelo.com',
+    category: 'Oficina',
   },
   {
     id: 'oficina-3',
